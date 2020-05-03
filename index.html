@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final project: Shiv Vashisht</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">	
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+	<script language="JavaScript" type="text/JavaScript" src="./scripts/myScripts.js"></script>
+
+</head>
+
+<body onload="onPageLoad();">
+        <div class="modal-header">
+        <div class="container .navbar-brand"></div>
+		</div>
+    <div class="container">
+		
+		<ul class="nav navbar-nav navbar-left">
+		   <li><a href="#" onclick="return ShowContent('devProfile');">Dev Profile</a></li>
+		   <li><a href="#" onclick="return ShowContent('cardGame');">Game</a></li>
+		   <li><a href="#"  onclick="return ShowContent('myAd');">My adventure</a></li>
+		</ul>
+    
+	</div>
+  
+	<div class="container">
+        <div id="devProfile" style="display:none">
+			<p>Name: Shiv Vashisht </p> 
+			<p>Email: svashisht@una.edu</p>
+		</div>
+        
+		<div id="cardGame" style="display:none">
+			<h3>Guess The Number</h3>
+			<p>We have selected a random number between 1 - 10. See if you can guess it.</p> 
+  
+			<div class="form"> 
+				<label for="guessField">Enter a guess: </label> 
+				<input type = "text" id = "guessField" class="guessField" placeholder="Guess a number" title="Enter number you want to guess" data-toggle="tooltip"> 
+				<input type = "submit" value = "Submit guess" class="btn btn-primary" id = "submitguess" onclick="numberGame();"> 
+			</div>		
+		
+		</div>
+		
+        <div id="myAd" style="display:none">
+			<li><a href="https://noob42o.github.io/DEV08/">Dev 08. jQuery debug</a></li>
+			<li><a href="https://noob42o.github.io/shivdev09.github.io/">Dev 09. jQuery inputs & outputs</a></li>
+			<li><a href="https://noob42o.github.io/dev10.github.io/">Dev 10. Loading JSON</a></li>
+		</div>
+	</div>	
+
+    <div class="modal-footer">
+		<div class="footerLinks">
+			<a href="https://github.com/noob42O"">My github</a>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2020</p>
+      </div>    </div>
+       
+
+
+
+
+
+
+
+</body>
+</html>
